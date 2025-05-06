@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meraki - Psicopedagogía Interactiva</title>
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <!-- Vinculación del CSS -->
+  <link rel="stylesheet" href="css/principal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Pequeño extra para scroll suave */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación fija -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#info-section">Información</a></li>
+      <li><a href="#libro-section">Libro</a></li>
+      <li><a href="#contacto-section">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Banner Principal -->
+  <section class="banner" id="banner">
+    <h1>GLOSARIO</h1>
+    <p>Psicopedagogía Interactiva Moderna</p>
+  </section>
+  
+  <!-- Sección de Información -->
+  <section class="dynamic-section" id="info-section">
+    <h2 class="section-title">Información</h2>
+    <div class="info-grid" id="info-grid">
+      <!-- Las tarjetas se generan dinámicamente en JS -->
+    </div>
+  </section>
+  
+  <!-- Sección Libro Interactivo -->
+  <section class="dynamic-section" id="libro-section">
+    <h2 class="section-title">Libro Interactivo</h2>
+    <div class="book-container">
+      <div class="flip-book" id="flip-book">
+        <!-- Imágenes de ejemplo, se agruparán en pares para generar el flip book -->
+        <img src="items/1.jpeg" alt="izquierda">
+        <img src="items/2.jpeg" alt="derecha">
+        <img src="items/3.jpeg" alt="izquierda">
+        <img src="items/4.jpeg" alt="derecha">
+        <img src="items/5.jpeg" alt="izquierda">
+        <img src="items/6.jpeg" alt="derecha">
+        <img src="items/7.jpeg" alt="izquierda">
+        <img src="items/8.jpeg" alt="derecha">
+        <img src="items/9.jpeg" alt="izquierda">
+        <img src="items/10.jpeg" alt="derecha">
+        <img src="items/11.jpeg" alt="izquierda">
+        <img src="items/12.jpeg" alt="derecha">
+        <img src="items/13.jpeg" alt="izquierda">
+        <img src="items/14.jpeg" alt="derecha">
+        <img src="items/15.jpeg" alt="izquierda">
+        <img src="items/16.jpeg" alt="derecha">
+        <img src="items/17.jpeg" alt="izquierda">
+        <img src="items/18.jpeg" alt="derecha">
+        <img src="items/19.jpeg" alt="izquierda">
+        <img src="items/20.jpeg" alt="derecha">
+        <img src="items/21.jpeg" alt="izquierda">
+        <img src="items/22.jpeg" alt="derecha">
+        <img src="items/23.jpeg" alt="izquierda">
+        <img src="items/24.jpeg" alt="derecha">
+        <img src="items/25.jpeg" alt="izquierda">
+        <img src="items/26.jpeg" alt="derecha">
+        <img src="items/27.jpeg" alt="izquierda">
+        <img src="items/1.jpeg" alt="derecha">
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <button class="nav-button" onclick="flipPage('prev')">Anterior</button>
+      <button class="nav-button" onclick="flipPage('next')">Siguiente</button>
+    </div>
+  </section>
+  
+  <!-- Sección Contacto -->
+  <section class="dynamic-section" id="contacto-section">
+    <h2 class="section-title">Referencias</h2>
+    <div class="contact-container">
+      <p>La informacion recopilada se obtuvo de los siguientes enlaces </p>
+      <ul class="contact-list">
+        <li>Email: info@merakipsicopedagogia.com</li>
+        <li>Teléfono: +1 234 567 890</li>
+        <li>Redes Sociales: @MerakiInteractiva</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Vinculación del JS -->
+  <script src="js/principal.js"></script>
+</body>
+</html>
