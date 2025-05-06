@@ -335,48 +335,57 @@
       margin: 0.5rem 0;
     }
   }
-   /* RESPONSIVIDAD MEJORADA PARA LIBRO */
-@media (max-width: 768px) {
+  /* RESPONSIVIDAD ESPECÍFICA PARA iPHONE Y PANTALLAS PEQUEÑAS */
+@media (max-width: 430px) {
   .book-container {
     width: 100%;
+    padding: 0.5rem;
     height: auto;
-    max-width: 100%;
-    padding: 1rem;
+  }
+
+  .flip-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .flip-book img {
     width: 100%;
     height: auto;
-    display: block;
-  }
-
-  .flip-book {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
   }
 
   .nav-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   .nav-button {
-    width: 80%;
-    margin-bottom: 10px;
+    width: 90%;
+    font-size: 14px;
+    padding: 12px;
   }
 
-  /* Mejora en títulos y párrafos */
   .banner h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .banner p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .dynamic-section {
+    padding: 1rem;
   }
 }
